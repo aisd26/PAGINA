@@ -1,0 +1,60 @@
+body{
+	background-color: #607b7d;
+}
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	width: 400px;
+}
+titulo{
+	font-family: 'Hedgier', sans-serif; 
+	font-size: 50px;
+	align-content: center;
+	color:black;
+}
+
+h2{
+	font-family: 'Hedgier';
+	color: green
+}
+h1{
+	font-family:'mistery quest',sans-serif;
+	font-size:45px;
+	color:black;
+}
+input: focus{
+	outline: 4px dasehd #4499933;
+}
+
+table{
+	matgin-left:300px;
+	background-color: grey;
+	color: white;
+	text.align: center;
+	width:700%;
+	}
+	th{
+		color: black;
+	  }
+	  ul{
+	  	font-family: 'Guttenberg MF', sans-serif;
+	  	font-size: 24px;
+	  }
+	  table{
+	  	border-collapse: : collapse;
+	  	width: 100px;
+	  	margin-bottom: 20px;
+	  }
+	th,td{
+		text-align: : left;
+		padding: 8px;
+	}
+	th{
+		background-color:blueviolet;
+	}
+	th{
+		background-color:#89A2BF;
+	
+}

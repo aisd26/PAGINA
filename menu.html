@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+ <enlace href=" https://fonts.cdnfonts.com/css/hedgier " rel="hoja de estilo">
+                
+
+   <title>Pagina 1 </title>
+</head>
+<body>
+    <div style="margin:24px;">
+     <nav class="navbar navbar-light" style="background-color: #e0e0e0;">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Inicio</a> 
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="menu.html">Menu</a>
+            </li>
+            <li >
+                <a href="formulario.html">Formulario</a>
+            </li>
+            <li>
+                <a href="resultado.html">Resultado</a>    
+            </li>
+            <li>
+                <a href="contacto.html">Contacto</a>
+            </li>    
+
+          </ul>
+        </div>
+      </nav>
+    </div>  
+   <h1>MENU</h1> 
+<div id= "menu"></div>
+<script type="text/javascript">
+   fetch('menu.json')
+   .then(response=>response.json())
+   .then(data=>{
+    const tabla= document.createElement('table');
+    tabla.innerHTML=`
+    <thead>
+<tr>
+ <th>Categoria</th>
+ <th>Imagen</th>
+ <th>Producto</th>
+ <th>Descripcion</th>
+ <th>Precio</th>
+ <th>Seleccion</th>
+
+</tr>
+    </thead>
+    <tbody>
+    </tbody>
+
+    ` ;
+
+document.getElementById('menu').appendChild(tabla);
+
+// Agregar los datos de cada categoria y los productos de la tabla
+Object.keys(data).forEach(categoria =>{
+    data[categoria].forEach(producto =>{
+        const fila = document.createElement('tr');
+        fila.innerHTML=`
+        <td>${categoria}</td>
+        <td><img src="${producto.imagen}" alt="${producto.name}"></td>
+
+        <td>${producto.nombre}</td>
+        <td>${producto.descripcion}</td>
+        <td>${producto.precio}</td>
+        <td><input type="checkbox" class="producto" 
+          data-precio="${producto.precio}"></td>
+       `;
+       tabla.querySelector('tbody').appendChild(fila);
+    
+});
+   
+   });
+//esta es la parte del codigo que realiza la suma
+const productos = document.querySelectorAll('.producto');
+productos.forEach(producto =>{
+    producto.addEventListener('change', () => {
+        var suma=0;
+        productos.forEach(producto => {
+            if(producto.checked){
+                suma+=parseFloat(producto.dataset.precio);
+            }
+        });
+        document.getElementById('resultado').innerHTML=`
+        <h1>TOTAL: $${suma.toFixed(2)} </h1>
+
+    });
+});
+
+})
+.catch(error => console.error(error))
+
+   </script>     
+
+<tr>
+        <td><img src="1.jpg" style="width:150px"></td>
+        <td>Hybe</td>
+        <td>Enhypen</td>
+        <td>DIMENSION:DILEMMA</td>
+        <td>$590.00</td>
+     </tr>   
+     <tr>
+        <td><img src="2.jpg" style="width:150px"></td>
+        <td>Hybe</td>
+        <td>Enhypen</td>
+        <td>Border:Carnival</td>
+        <td>$500.00</td>
+     </tr>   
+     <tr>
+        <td><img src="3.jpg" style="width:150px"></td>
+        <td>Hybe</td>
+        <td>Enhypen</td>
+        <td>Dimension:Answer</td>
+        <td>$600.00</td>
+     </tr>   
+     <tr>
+        <td><img src="4.jpg" style="width:150px"></td>
+        <td>JYP</td>
+        <td>Stray Kids</td>
+        <td>Noeasy</td>
+        <td>220</td>
+    
+     </tr>  
+     <tr>
+        <td><img src="6.jpg" style="width:150px"></td>
+        <td>Hybe</td>
+        <td>Tomorrow x Together</td>
+        <td>Freeze</td>
+        <td>$300.00</td>
+     </tr>
+     <tr>
+        <td><img src="7.jpg" style="width:150px"></td>
+        <td>SM</td>
+        <td>NCT127</td>
+        <td>2 baddies</td>
+        <td>$300.00</td>
+     </tr>
+      <tr>
+        <td><img src="8.jpg" style="width:150px"></td>
+        <td>Hybe</td>
+        <td>Enhypen</td>
+        <td>Manifesto:Day 1</td>
+        <td>$300.00</td>
+     </tr> 
+     <tr>
+        <td><img src="9.jpg" style="width:150px"></td>
+        <td>Hybe</td>
+        <td>Tommorrow x Together</td>
+        <td>Lighstick</td>
+        <td>$550.00</td>
+     </tr> 
+     <tr>
+        <td><img src="10.jpg" style="width:150px"></td>
+        <td>Hybe</td>
+        <td>Enhypen</td>
+        <td>Lightstick</td>
+        <td>$550.00</td>
+     </tr>      
+      <td><img src="10.1.jpg" style="width:150px"></td>
+        <td>Hybe</td>
+        <td>TXT</td>
+        <td>Funda para Pasaporte</td>
+        <td>$1300.00</td>
+     </tr>     
+      <td><img src="11.1.jpg" style="width:150px"></td>
+        <td>Hybe</td>
+        <td>TXT</td>
+        <td>Sudadera</td>
+        <td>$2000.00</td>
+     </tr>    
+     <td><img src="9.1.jpg" style="width:150px"></td>
+        <td>Hybe</td>
+        <td>Enhypen</td>
+        <td>Sudadera</td>
+        <td>$1300.00</td>
+     </tr>     
+     <td><img src="12.jpg" style="width:150px"></td>
+        <td>Hybe</td>
+        <td>LEESERAFIM</td>
+        <td>Sudadera</td>
+        <td>$1400.00</td>
+     </tr>     
+
+ 
+
+
+    </table>   
+
+</body>
+</html>  

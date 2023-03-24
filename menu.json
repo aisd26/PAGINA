@@ -1,0 +1,94 @@
+{
+	"Menu":[
+		{
+        "nombre":"Dimension:Dilema",
+        "descripcion":"3 versiones al azar,Photocard 3 versiones, al azar. Photobook,Postcard,Sticker instantaneo,CD,Message Card,Poster",
+        "precio":590,
+        "imagen":"img/1.jpg"
+		},
+		{
+		"nombre":"Border:Carnival",
+		"descripcion":"Photobook 3 versiones,aleatorio. CD, LyricBook,Photocard random,Lenticular Card,Carnival ticked, Sticker, Poster, Polaroid",
+        "precio":500,
+        "imagen":"img/2.jpg"
+		},
+		{
+        "nombre":"Dimension:Answer",
+        "descripcion":"Book Case 2 versiones, Photobook Y Lyric book, Holder y CD,Photostand,Photocard-A,Photocard-B,Sticker,Photobookmark",
+        "precio":500,
+        "imagen":"img/3.jpg"
+		},
+		{
+        "nombre":"Noeasy",
+        "descripcion":"Package Sleeve,Photobook,Lyricsbook;CD,Sticker,Unit Folder Poster,Photocard,Doble Sided Photocard",
+        "precio":500,
+        "imagen":"img/4.jpg"
+		},
+		{
+        "nombre":"The Caos of Chapter:FREZZE",
+        "descripcion":"Diary Postcrad, Photobook, CD, Photocard,Sticker,MiniPoster",
+        "precio":300,
+        "imagen":"img/6.jpg"
+		},
+		{
+        "nombre":"2 baddies",
+        "descripcion":"Cover,Booklet,Postcard, Sticker, FoldingPoster,Photocard",
+        "precio":300,
+        "imagen":"img/7.jpg"
+		},
+		{
+		"nombre":"Manifesto:Day One",
+        "descripcion":"Cover,Booklet,Postcard, Sticker, FoldingPoster,Photocard",
+        "precio":300,
+        "imagen":"img/8.jpg"
+		}
+		{
+        "nombre":"Photocards coleccionables, Enhypen",
+        "descripcion":"1 paquete=7 photocards individuales de cada miembro con una photocard de grupo(8 photocards diferentes en total)ademas de encontrar una especial card con mensajes de parte de alguno de los miembros para ENGENE",
+        "precio":200,
+        "imagen":"img/8.1jpg"
+		},
+	],
+
+	"extras":[
+		{
+			"nombre":"Lighstick Tomorrow x Together",
+        "descripcion":"Palo de luz sincronizado a las canciones del artista",
+        "precio":550,
+        "imagen":"img/9.jpg"
+		}
+		{
+			"nombre":"Lighstick Enhypen",
+        "descripcion":"Palo de luz sincronizado a las canciones del artista",
+        "precio":550,
+        "imagen":"img/10.jpg"
+		}
+		{
+        "nombre":"Sudadera MANIFESTO:DAY 1",
+        "descripcion":"sudadera negra con cremallera y ajuste regular confeccionadocon tejido French Terry de 380g. el logo manifesto esta bordado en el lado izquierdodel pecho. Enhypen esta grabado den el tirador de goma de la cremallera,hecho en naranja inspirado en el color clave de la gira.",
+        "precio":1300,
+        "imagen":"img/9.1jpg"
+		},
+		{
+        "nombre":"Funda para pasaporte:TXT ver.",
+        "descripcion":"una funda holografica para pasaporte con los nombres de los miembros en la parte de enfrente de la funda.",
+        "precio":380,
+        "imagen":"img/10.1.jpg"
+		},
+		{
+        "nombre":"Sudadera Deportiva:TXT ver.",
+        "descripcion":"sudadera negra hecha de nylon, en el frente de la sudadera el logo del artista esta diseñado en un modo luminoso, el logotipo de ACT:SWEET MIRAGE se representa en un estampado que refleja la luz en la manga y su color cambia sutilmente segun la luz",
+        "precio":2000,
+        "imagen":"img/11.1.jpg"
+		},
+		{
+        "nombre":"Sudadera Leeserafim",
+        "descripcion":"en la parte posterior se imprimen graficos con dibujos a mano de losos miembos, hehca con 380g de tejido frances y con el logotipo impreso de FEARNOT",
+        "precio":1400,
+        "imagen":"img/12.jpg"
+		}
+		
+
+]
+	
+}
